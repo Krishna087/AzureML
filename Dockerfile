@@ -10,7 +10,7 @@ RUN mkdir -p /usr/src/app/pip
 COPY requirements.txt /usr/src/app/pip
 
 # PIP / All the packages needed
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /usr/src/app/pip/requirements.txt
 
 #COPY . .
 
